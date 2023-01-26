@@ -33,11 +33,19 @@ Use GitHub para el control de versiones. Para conocer las versiones disponibles,
 ## V1.0.0
 
 - Estructura del proyecto.
+- Modulos y rutas
 - Se agregaron los estilos globales.
-- y se añadio la seccion del Header. 
+
 
 ## V1.0.1
 
+- Creacion de modulos de header y footer
+- Incorporacion de estilos
+
+## V1.0.2
+
+- Creacion de modulos de crea tu cuenta, beneficios y estadisticas
+- Incorporacion de estilos
 
 ## Proximas Actualizaciones
 
