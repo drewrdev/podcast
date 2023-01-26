@@ -1,0 +1,91 @@
+@import "../../../assets/scss/base/variables";
+@import "../../../assets/scss/base/mixins";
+// @import '../../../assets/scss/base/botones';
+
+.plans {
+  background-color: $secondary;
+  h2 {
+    @include headingBorder($white, $primary);
+  }
+  .description {
+    color: $white;
+  }
+}
+
+.our-plans {
+  display: flex;
+  flex-direction: column;
+
+  @include tablet {
+    flex-direction: row;
+    max-width: 80rem;
+    margin-inline: auto;
+    margin-block-start: 10rem;
+  }
+
+  .plan {
+    flex-grow: 1;
+    background-color: $white;
+    padding: 16rem 4rem 4rem 4rem;
+    border-bottom: 1px solid #e1e1e1;
+    @include tablet {
+      border: none;
+      transition-property: transform;
+      transition-duration: 300ms;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+
+    .price {
+      font-size: 1.8rem;
+      text-align: center;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    .list {
+      li {
+        text-align: center;
+        margin-bottom: 2rem;
+
+        &:last-of-type {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    &.inicio {
+      @include iconoBg("../../../assets/img/icono_inicio.svg");
+    }
+
+    &.business {
+      background-color: $primary;
+      order: -1;
+      @include iconoBg("../../../assets/img/icono_negocio.svg");
+      @include tablet {
+        order: unset;
+        margin-top: -5rem;
+        margin-bottom: -5rem;
+        border-radius: 2rem;
+        background-position: 50% 7rem;
+        padding-top: calc(16rem + 5rem);
+        z-index: 100;
+      }
+    }
+    &.pro {
+      @include iconoBg("../../../assets/img/icono_pro.svg");
+    }
+  }
+
+  .button-primary {
+    @include button($primary, $secondary);
+  }
+  .button-plan {
+    @extend .button-primary;
+    border: 2px solid $white;
+    margin-top: 2rem;
+    display: block;
+  }
+}
