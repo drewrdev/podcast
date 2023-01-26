@@ -1,0 +1,8 @@
+@import '../../../assets/scss/base/variables';
+@import '../../../assets/scss/base/mixins';
+
+.statistics {
+  h2 {
+      @include headingBorder($secondary, $primary)
+  }
+}

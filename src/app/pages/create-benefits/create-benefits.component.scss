@@ -1,0 +1,43 @@
+@import "../../../assets/scss/base/variables";
+@import "../../../assets/scss/base/mixins";
+
+/*CREATE */
+.crea-grid {
+  @include tablet {
+    @include grid(2, 2rem);
+    align-items: center;
+  }
+
+  h2 {
+    @include headingBorder($secondary, $primary);
+  }
+}
+
+/*BENEFITS*/
+
+.benefits {
+  background-color: $primary;
+
+  .grid-benefits {
+    @include tablet {
+      @include grid(5, 4rem);
+      align-items: center;
+    }
+  }
+  .content-benefits {
+    grid-column: 1 / 4;
+
+    h2 {
+      @include headingBorder($secondary, $white);
+    }
+  }
+  .imagen {
+    grid-column: 4 / 6;
+    transition-property: transform;
+    transition-duration: 0.3s;
+
+    &:hover {
+      transform: rotate(8deg) scale(1.1);
+    }
+  }
+}
