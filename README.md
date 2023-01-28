@@ -2,7 +2,7 @@
 # PodcastWebSite
 Este proyecto es una Pagina Web diseñada para permitir al usuario crear una cuenta para publicar su Podcast, con un respectivo plan inicial el cual podra expandir cuando lo desee.
 
-<!-- ver pagina web  -->
+Enlace : https://podcatsfm.netlify.app/
 
 ## Instalacion
 
